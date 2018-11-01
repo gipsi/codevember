@@ -1,2 +1,2 @@
-# -codevember
-#codevember challenge 2018 - daily code prompts
+# codevember 2018
+Daily code prompts
