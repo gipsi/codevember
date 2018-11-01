@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>grid</title>
+<link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet">
+
+<style>
+html {
+  font-family: 'Gruppo', cursive, lato, sans-serif;
+  font-size: 12px;
+  background: #000;
+    }
+h1, ul {
+  font-family: 'Gruppo', cursive, lato, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  background: mediumorchid;
+  list-style-type: none;
+  background: linear-gradient(indigo, slateblue); 
+  }
+  
+  li {
+  padding: 1em;
+  background: mediumorchid;
+}
+  li:nth-child(3),
+  li:nth-child(4),
+  li:nth-child(7), 
+  li:nth-child(10),
+  li:nth-child(14),
+  li:nth-child(16),
+  li:nth-child(21),
+  li:nth-child(29),
+  li:nth-child(32){
+  background: mediumturquoise;
+}
+  li:nth-child(3) {
+	grid-column: span 2;  
+}
+  li:nth-child(4) {
+	grid-row: span 2;  
+  }	
+  li:nth-child(7) {
+	grid-column: span 2;
+    grid-row: span 2;	
+  }
+    li:nth-child(10) {
+	grid-column: span 2;  
+}
+  li:nth-child(14) {
+    grid-row: span 2;	
+  }
+    li:nth-child(16) {
+	grid-column: span 2;	
+    grid-row: span 2;	
+  }
+      li:nth-child(32) {
+	grid-column: span 3;  
+}
+  
+  .grid-container {
+ 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px,2fr));
+  grid-gap: 2rem;
+}
+</style>
+ 	
+</head>
+
+<body>
+<h1>Codevember 2018</h1>
+<ul class="grid-container">
+
+  <li><a href="infinity-light/index.html" title="infinity-light cube" />One:Infinity-light cube</a></li> 
+  <li>Two <img src="" alt="" /></li>
+  <li>Three<img src="" alt="" /></li> 
+  <li>Four <img src="" alt="" /></li>
+  <li>Five <img src="" alt="" /></li> 
+  <li>Six <img src="" alt="" /></li>
+  <li>Seven <img src="" alt="" /></li> 
+  <li>Eight <img src="" alt="" /></li>
+  <li>Nine<img src="" alt="" /></li> 
+  <li>Ten <img src="" alt="" /></li>
+  <li>Eleven <img src="" alt="" /></li> 
+  <li>Twelve <img src="" alt="" /></li>
+  <li>Thirteen <img src="" alt="" /></li>
+  <li>Fourteen <img src="" alt="" /></li> 
+  <li>Fifteen <img src="" alt="" /></li>
+  <li>Sixteen<img src="" alt="" /></li> 
+  <li>Seventeen <img src="" alt="" /></li>
+  <li>Eighteen <img src="" alt="" /></li> 
+  <li>Nineteen <img src="" alt="" /></li>
+  <li>Twenty <img src="" alt="" /></li> 
+  <li>Twenty-one <img src="" alt="" /></li>
+  <li>Twenty-two <img src="" alt="" /></li> 
+  <li>Twenty-three <img src="" alt="" /></li>
+  <li>Twenty-four <img src="" alt="" /></li> 
+  <li>Twenty-five <img src="" alt="" /></li>
+  <li>Twenty-six <img src="" alt="" /></li>
+  <li>Tweenty-seven <img src="" alt="" /></li>
+  <li>Twenty-eight <img src="" alt="" /></li> 
+  <li>Twenty-nine <img src="" alt="" /></li>
+  <li>Thirty <img src="" alt="" /></li>
+</ul>
+<footer>  
+</footer>
+</body>
+</html>
