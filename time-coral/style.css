@@ -1,0 +1,118 @@
+html { 
+  background: url(coral.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+}
+
+    body {
+	  background-color: #42a1c6;
+      font-size: 2rem;
+      display:flex;
+      flex:1;
+      min-height: 100vh;
+      align-items: center
+    }
+	.box {
+	  display: flex;
+	}
+		  
+	  /* Bubbles */
+.bubbles {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  margin-right: 50px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: .50;
+  width: 40px;
+  height: 40px;
+  animation: up 4s infinite;
+}
+
+.bubble-2 {
+  left: 350px;
+  animation: up 2s infinite;
+}
+
+.bubble-3 {
+  left: 750px;
+  opacity: .30;
+  animation: up 5s infinite;
+}
+
+.bubble-4 {
+  left: 1150px;
+  animation: up 6s infinite;
+}
+
+.bubble-5 {
+  left: 50px;
+  animation: up 5s infinite;
+}
+
+.bubble-6 {
+  left: 300px;
+  opacity: .30;
+  animation: up 3s infinite;
+}
+
+.bubble-7 {
+  left: 670px;
+  animation: up 4s infinite;
+}
+
+.bubble-8 {
+  left: 1050px;
+  opacity: .30;
+  animation: up 3s infinite;
+}
+
+/* Bubbles Animation */
+@keyframes up {
+  100% {
+    transform: translateY(-800px);
+  }
+}
+	
+    .clock {
+      background: mediumorchid;
+	  opacity: 0.55;
+      width: 40rem;
+      height: 30rem;
+      border: 20% #3C3B5C; 
+      border-radius:50%;
+      margin: 0 auto;
+      position: relative;
+      padding:2rem;
+      box-shadow:
+        0 0 0 8px rgba(0,0,0,0.1),
+        inset 0 0 0 3px white,
+        inset 0 0 20px coral,
+        0 0 10px rgba(0,0,0,0.2);
+    }
+    .clock-face {
+      position: relative;	 
+      width: 100%;
+      height: 100%;
+      transform: translateY(-3px); /* account for the height of the clock hands */
+    }
+    .hand {
+      width:50%;
+      height:50px;
+      background: white;
+      position: absolute;
+	  border-radius:60%;
+      top:50%;
+      transform-origin: 70%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+	  
+ 
+	  
+	  
