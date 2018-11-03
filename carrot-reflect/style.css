@@ -1,0 +1,53 @@
+
+body {
+	background-color: #f2f2f2;
+}
+
+.wrap {
+	position: relative;
+	max-width: 400px;
+	height: 300px;
+	margin: 60px auto;
+	&:hover .shadow {
+		filter: blur(12px);
+		opacity: 0.6;
+	}
+	&:hover .frame {
+		transform: scale(1.04) translateY(-5px);
+	}
+}
+
+.image {
+	width: 100%;
+	background-image: url('carrot.png');
+	background-size: cover;
+	background-position: bottom;
+}
+
+.frame {
+	position: relative;
+	height: 99%;
+	box-shadow: rgba(23,43,99,0.26) 0 7px 42px;
+	border-radius: 3px;
+	z-index: 10;
+	transition: all 300ms ease;
+}
+
+.shadow {
+	width: 96%; height: 90%;
+	margin: 0 auto;
+	transform: rotate3d(1, 0, 0, 180deg) translateY(20px);
+	filter: blur(8px);
+	border-radius: 80% 80% 0 0;
+	opacity: .85;
+	transition: all 600ms ease 150ms;
+}
+
+.gradient {
+	position: absolute;
+	bottom: 0;
+	width: 104%; height: 25%;
+	transform: translate(-2%);
+	background-image: -webkit-radial-gradient(center -20%, ellipse farthest-corner, rgba(255,255,255,0) 0%, rgba(242,242,242,0.55) 75%);
+}
+
