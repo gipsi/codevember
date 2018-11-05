@@ -1,0 +1,33 @@
+html, body {
+  margin: 0; padding: 0;
+}
+
+.fragment {
+  overflow: hidden;
+}
+
+#sky {	
+  display: flex;
+  background: url("sky.png") repeat-x;
+  height: 860px;
+  width: 5076px;
+  animation: slide 10s linear infinite;
+  -webkit-animation: slide 10s linear infinite;
+}
+
+@-webkit-keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+.bird {
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
