@@ -1,0 +1,134 @@
+        html {
+            margin: 0; padding: 0;
+        }
+
+		body {
+			display: grid;
+			background: #133d48;
+			color: white;
+			-webkit-animation: sky-to-black 5s ease forwards;
+			-moz-animation:    sky-to-black 5s ease forwards;
+			-ms-animation:     sky-to-black 5s ease forwards;
+		}
+		.ground {
+			position: absolute;
+			top: 75%;
+			left: 0;
+			width: 100%;
+			height: 50%;
+			background: black;
+			-webkit-animation: ground-to-black 5s ease forwards;
+			-moz-animation:    ground-to-black 5s ease forwards;
+			-ms-animation:     ground-to-black 5s ease forwards;
+		}
+		.moon {
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			background: orangered;
+			border-radius: 50px;
+			box-shadow: 0 0 20px white;
+			left: 50%;
+			top: 75%;
+			margin: 0 -50px;
+			-webkit-animation: rising-eclipse 5s ease forwards;
+			-moz-animation:    rising-eclipse 5s ease forwards;
+			-ms-animation:     rising-eclipse 5s ease forwards;
+		}
+		
+		.ground, .moon {
+			text-indent: -9999px;
+			overflow: hidden;
+		}
+		
+		@-moz-keyframes rising-eclipse {
+			0%   { 
+				top: 80%; 
+				box-shadow: 0 0 20px 100px white;
+			}
+			100% {
+				top: 15%;
+				box-shadow: 0 0 150px 20px white;
+			}
+		}
+		@-webkit-keyframes rising-eclipse {
+			0%   { 
+				top: 80%; 
+				box-shadow: 0 0 20px 100px white;
+			}
+			100% {
+				top: 15%;
+				box-shadow: 0 0 150px 20px white;
+			}
+		}
+		@-ms-keyframes rising-eclipse {
+			0%   { 
+				top: 80%; 
+				box-shadow: 0 0 20px 100px white;
+			}
+			100% {
+				top: 15%;
+				box-shadow: 0 0 150px 20px white;
+			}
+		}
+		
+		@-moz-keyframes sky-to-black {
+			0%   { 
+				background-color: #133d48;
+			}
+			100% {
+				background-color: black;
+			}
+		}
+		@-moz-keyframes ground-to-black {
+			0%   { 
+				background-color: #211d11
+			}
+			100% {
+				background-color: black;
+			}
+		}
+		@-webkit-keyframes sky-to-black {
+			0%   { 
+				background-color: #133d48;
+			}
+			100% {
+				background-color: black;
+			}
+		}
+		@-webkit-keyframes ground-to-black {
+			0%   { 
+				background-color: #211d11
+			}
+			100% {
+				background-color: black;
+			}
+		}
+		@-ms-keyframes sky-to-black {
+			0%   { 
+				background-color: #133d48;
+			}
+			100% {
+				background-color: black;
+			}
+		}
+		@-ms-keyframes ground-to-black {
+			0%   { 
+				background-color: #211d11
+			}
+			100% {
+				background-color: black;
+			}
+		}
+		
+		.text{
+			background: black;
+			color: white;
+		}
+		
+		canvas {
+            position:absolute;
+            top:50%;
+            left:0
+        }
+
