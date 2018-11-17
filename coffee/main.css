@@ -1,0 +1,87 @@
+html { 
+  background: url(https://res.cloudinary.com/duq3b11nz/image/upload/v1542431264/cloth_uvhuhm.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+img {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 8px;
+  border-color: white;
+
+}
+
+img:hover {
+  transition: 0.70s;
+  -webkit-transition: 0.70s;
+  -moz-transition: 0.70s;
+  -ms-transition: 0.70s;
+  -o-transition: 0.70s;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(3600deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+} 
+
+section {
+  
+  position: relative;
+}
+
+section img {
+	
+	position: absolute;
+	  
+}
+
+.top {
+	animation-name: fade;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3.5s;
+	animation-direction: alternate;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 1;
+	}
+	75% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+section {
+  top: 200px;
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center }
+
+
+
+
+
+
+
+
