@@ -1,0 +1,46 @@
+html,body {
+	width: 100%;
+    height: 100%;
+	margin: 0;
+    border: 0;
+    outline: 0;
+	background: radial-gradient(circle at center, turquoise 0, indigo, black 100%);
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+	position: absolute;
+	margin: auto;
+	top: 28%; 
+	left: 32%;
+	text-align: center;
+}
+
+svg {
+	border-radius: 50%;
+    background-color: radial-gradient(circle at turquoise, white 0, indigo, black 100%);
+    -webkit-animation-name: glimmer; 
+    -webkit-animation-duration: 1s; 
+    animation-name: glimmer;
+    animation-duration: 1s;
+	animation: glimmer 0.0003s linear 0.0006s infinite alternate-reverse;
+	opacity: 0.07;
+}
+
+@-webkit-keyframes glimmer {
+    from {background-color: indigo;}
+    to {background-color: turquoise;}
+}
+
+@keyframes glimmer {
+    from {background-color: indigo;}
+    to {background-color: turquoise;}		
+}
+
+
+
