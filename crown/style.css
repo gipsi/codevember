@@ -1,0 +1,75 @@
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+	background: black;
+/*	background: radial-gradient(circle at center, turquoise 0, indigo, black 100%);
+	   
+      animation: colorchange 50s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 5s infinite alternate-reverse; /* Chrome and Safari */
+	  
+	  
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: #7a474f;}
+      25%  {background: #6c465d;}
+      50%  {background: #564863;}
+      75%  {background: #3f4961;}
+      100% {background: #2f4858;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: #7a474f;}
+      25%  {background: #6c465d;}
+      50%  {background: #564863;}
+      75%  {background: #3f4961;}
+      100% {background: #2f4858;} 
+    }
+  
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	
+}
+
+.crown {
+  background-image: url('https://res.cloudinary.com/duq3b11nz/image/upload/v1542770610/crown_dmdtzl.svg');
+  background-repeat: no-repeat;
+
+}
+
+.center {
+	position: absolute;
+	margin: auto;
+	top: 20%; 
+	left: 20%;
+
+}
+/*
+svg {
+	border-radius: 50%;
+    background-color: radial-gradient(circle at  indigo 0, purple, black 100%);
+    -webkit-animation-name: glimmer; 
+    -webkit-animation-duration: 50s; 
+    animation-name: glimmer;
+    animation-duration: 50s;
+	animation: glimmer 50s linear 50s infinite alternate-reverse;
+	opacity: 0.75;
+}
+
+@-webkit-keyframes glimmer {
+    from {background-color: indigo;}
+    to {background-color: turquoise;}
+}
+
+@keyframes glimmer {
+    from {background-color: indigo;}
+    to {background-color: turquoise;}		
+}
+*/

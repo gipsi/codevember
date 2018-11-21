@@ -1,0 +1,47 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #000000;	   
+    animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 5s infinite alternate-reverse; /* Chrome and Safari */
+	  	  
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: #890002;}
+      30%  {background: #dc143c;}
+      50%  {background: #382b47;}
+      75%  {background: #6f00ff;}
+	  100% {background: #bba1d5;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+	  0%   {background: #000000;}
+      20%  {background: #412728;}
+      40%  {background: #7f4d3e;}
+      60%  {background: #b87c4c;}
+      80%  {background: #e2b659;}
+	  100% {background: #f9f871;}
+    }
+  
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;	
+}
+/*
+.crown {
+	background-image: url('https://res.cloudinary.com/duq3b11nz/image/upload/v1542770610/crown_dmdtzl.svg');
+	background-repeat: no-repeat;
+}
+*/
+.center {
+	position: absolute;
+	margin: auto;
+	top: 10%; 
+	left: 10%;
+}
