@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- https://res.cloudinary.com/duq3b11nz/image/upload/v1543359102/shards_ye2xxh.png -->
+
+  <title>key shards cycle</title>
+
+</head>
+
+<style>
+
+@keyframes cycle{
+    0%   {background-color: #463c79;}
+    25%  {background-color: #0f1f43;}
+    50%  {background-color: #08415f;}
+    100% {background-color: #3f686c;}
+}
+
+body {
+    background-color: #0f1f43;
+    animation-name: cycle;
+    animation-duration: 3s;
+	animation-iteration-count: 3;
+	animation-direction: alternate;
+} 
+
+
+img {
+    opacity: 0.8;
+    filter: alpha(opacity=50); 
+    background-size: cover;
+    border: 1px solid #fff;
+}
+
+.responsive {
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<body>
+<div>
+<img src="shards.png" alt="chaos flame fractal" class="responsive">
+</div>
+  
+</body>
+
+</html>
